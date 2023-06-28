@@ -31,6 +31,7 @@ div.header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 div.header span {
@@ -200,6 +201,7 @@ span {
 .h1 {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 h1 {
