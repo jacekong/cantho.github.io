@@ -486,3 +486,71 @@ section.progress {
  .heart::after{
     top: -17px;
  }
+
+ @media only screen and (max-width: 768px) {
+    .dates span {
+        width: 70px;
+        height:70px;
+    }
+    div.header h1 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .gz-weather-icon {
+        width: 100px;
+        margin-top: 10px;
+    }
+    .gz-weather h1 {
+        font-size: 45px;
+    }
+    .ct-weather-icon {
+        width: 100px;
+        margin-top: 10px;
+    }
+    .ct-weather h1 {
+        font-size: 45px;
+    }
+    .dates {
+        gap: 11px;
+    }
+    .ct-details {
+        margin-top: 20px;
+    }
+    .gz-details {
+        margin-top: 20px;
+    }
+    .card {
+        padding: 40px 20px;
+        background: #34e89e;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .ct-weather h1 {
+        background: #F7971E;  /* fallback for old browsers */
+        background-image: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .gz-weather h1 {
+        background: #F7971E;  /* fallback for old browsers */
+        background-image: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+        background-image: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    #avatar-koi {
+        width: 60px;
+        height: 60px;
+        top: -20px;
+    }
+    #avatar-jace {
+        width: 60px;
+        height: 60px;
+        top: -20px;
+    }
+
+}
