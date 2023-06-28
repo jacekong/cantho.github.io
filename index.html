@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jace&Koi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <br><br><br>
+    <div class="h1"><h1>I'm very very very happy~</h1></div>
+    <br>
+    <div class="header" style="display:flex; justify-content:center;">
+        <h1>How about the weather of the day?</h1>
+    </div>
+    <section class="weather">
+        <div class="card">
+            <!-- guangzhou -->
+            <div class="gz-weather">
+                <p class="gz-status" style="font-size: 24px;"></p>
+                <img src="" class="gz-weather-icon">
+                <h1 class="gztemp"></h1>
+                <h2 class="gz-city"></h2>
+                <div class="gz-details">
+                    <div class="cols">
+                        <img src="./images/humidity.png">
+                        <div>
+                            <p class="gz-humidity">
+                                
+                            </p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <img src="./images/wind.png">
+                        <div>
+                            <p class="gz-wind">
+                                
+                            </p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <!-- can tho -->
+            <div class="ct-weather">
+                <p class="ct-status" style="font-size: 24px;"></p>
+                <img src="" class="ct-weather-icon">
+                <h1 class="cttemp"></h1>
+                <h2 class="ct-city"></h2>
+                <div class="ct-details">
+                    <div class="cols">
+                        <img src="./images/humidity.png">
+                        <div>
+                            <p class="ct-humidity">
+                                
+                            </p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="cols">
+                        <img src="./images/wind.png">
+                        <div>
+                            <p class="ct-wind">
+                                
+                            </p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="header" style="display:flex; justify-content:center;">
+        <h1>
+            We are almost here, can't wait to see you~
+        </h1>
+        <span onclick="playWhaleSound();">&#128011;</span>
+        <audio id="whale">
+            <source src="./audio/whalesound.m4a">
+        </audio>
+    </div>
+    <section class="countdown" id="countdown">
+        <div class="card">
+            <h2>Jace's in Guangzhou</h2>
+            <div class="dates">
+                <span><p id="ch-day"></p></span>
+                <span><p id="ch-hour"></p></span>
+                <span><p id="ch-minute"></p></span>
+                <span><p id="ch-sec"></p></span>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Koi's in Can Tho</h2>
+            <div class="dates">
+                <span><p id="vn-day"></p></span>
+                <span><p id="vn-hour"></p></span>
+                <span><p id="vn-minute"></p></span>
+                <span><p id="vn-sec"></p></span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="count-forward" id="count-forward">
+        <div class="card">
+            <h2>Watch out, we can no longer use the count down, the bomb is counting forward~</h2>
+            <div class="dates">
+                <span><p id="day"></p></span>
+                <span><p id="hour"></p></span>
+                <span><p id="minute"></p></span>
+                <span><p id="sec"></p></span>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- running progress -->
+    <section class="progress" id="progress">
+        <!-- Jace -->
+        <div id="progress-bar-container-jace">
+            <div id="avatar-jace">
+                <img src="./images/jace.jpeg" alt="">
+            </div>
+            <div id="progress-bar-jace"></div>
+        </div>
+        <!-- Koi -->
+        <div id="progress-bar-container-koi">
+            <div id="avatar-koi">
+                <img src="./images/koi.jpeg">
+            </div>
+            <div id="progress-bar-koi"></div>
+            
+        </div>
+    </section>
+    <div class="heart" id="heart"></div>
+    <br><br><br>
+    <div class="quote" style="display: flex; justify-content:center">
+        <p>
+            Miss you a lot~ &#128011;
+        </p>
+    </div>
+    
+
+    <br><br><br><br><br><br><br><br>
+
+    <script src="./app.js"></script>
+</body>
+</html>

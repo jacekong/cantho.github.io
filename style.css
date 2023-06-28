@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* background-color: #111333; */
+    font-family: 'Poppins', sans-serif;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #111333, #000428);
+    background: linear-gradient(to right, #111333, #000428);
+}
+div.header h1 {
+    background: #fc4a1a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+div.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.header span {
+    font-size: 42px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+div.header span:hover {
+    font-size: 50px;
+}
+
+p,
+span {
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.countdown .title {
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    height: auto;
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    font-size: 30px;
+    padding: 12px;
+    animation-name: title;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    position: relative;
+}
+
+.date {
+    min-height: 150px;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px;
+}
+
+#date:hover {
+    font-size: 26px;
+    background: -webkit-linear-gradient(to right, #fc466b, #3f5efb);
+}
+
+.date:hover {
+    transform: scale(1.5);
+    background: #1A2980;
+    background: -webkit-linear-gradient(to right, #26D0CE, #1A2980);
+    background: linear-gradient(to right, #26D0CE, #1A2980);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    height: 70px;
+    width: 30vw;
+    border-radius: 20px;
+    border: none;
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2);
+    box-shadow: #B3FFAB 0px 14px 28px, #12FFF7 0px 10px 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #FF4E50;
+    background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+    background: linear-gradient(to right, #F9D423, #FF4E50);
+}
+
+.popup {
+    height: auto;
+    width: 300px;
+    padding: 15px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    background: #2b5876;
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    opacity: .97;
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.5s, top 0.5s;
+}
+
+.open-popup {
+    top: 50%;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup .img img {
+    height: 70%;
+    width: 100%;
+}
+
+@keyframes title {
+    0% {
+        background: #314755;
+        background: -webkit-linear-gradient(to right, #26a0da, #314755);
+        background: linear-gradient(to right, #26a0da, #314755);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background: #2b5876;
+        background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+        background: linear-gradient(to right, #4e4376, #2b5876);
+        left: 30vw;
+        top: 0px;
+    }
+
+    50% {
+        background: #cc2b5e;
+        background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);
+        background: linear-gradient(to right, #753a88, #cc2b5e);
+        left: 30vw;
+        top: 20vh;
+    }
+
+    75% {
+        background: #ec008c;
+        background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+        background: linear-gradient(to right, #fc6767, #ec008c);
+        left: -20vw;
+        top: 20vh;
+    }
+
+    100% {
+        background: #1FA2FF;
+        background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+        background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);
+        left: -20vw;
+        top: 0px;
+    }
+}
+
+.h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* weather section */
+.weather {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.gz-weather-icon {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.gz-weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.gz-weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.gz-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.cols {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.cols img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.gz-humidity,
+.gz-wind {
+    font-size: 24px;
+    margin-top: -6px;
+}
+
+/* can tho */
+.ct-weather-icon {
+    width: 150px;
+    margin-top: 30px;
+}
+
+.ct-weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.ct-weather h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.ct-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.ct-humidity,
+.ct-wind {
+    font-size: 24px;
+    margin-top: -6px;
+}
+
+/* countdown */
+.countdown .card {
+    width: 100%;
+    max-width: 600px;
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dates span {
+    width: 100px;
+    height: 100px;
+    background: #DA4453;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #89216B, #DA4453);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.dates span p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.countdown .card h2 {
+    font-weight: 400;
+}
+
+/* progress bar */
+section.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    background: #eee;
+    gap: 20px;
+
+}
+#progress-bar-container-koi {
+    position: relative;
+    width: 50%;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+
+}
+#progress-bar-koi {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: width 1s linear;
+    transform-origin: top right;
+    border-radius: 20px;
+    background: #f857a6;
+    background: -webkit-linear-gradient(to right, #ff5858, #f857a6);
+    background: linear-gradient(to right, #ff5858, #f857a6);
+}
+
+#avatar-koi {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    z-index: 7;
+}
+#avatar-koi img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#progress-bar-container-jace {
+    position: relative;
+    width: 50%;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+}
+#progress-bar-jace {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #F7971E;
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+    background: linear-gradient(to right, #FFD200, #F7971E);
+    border-radius: 10px;
+    transition: width 1s linear;
+    transform-origin: top right;
+}
+
+#avatar-jace {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+#avatar-jace img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* count forward */
+.count-forward {
+    display: flex;
+    justify-content: center;
+}
+.count-forward .card {
+    width: 100%;
+    max-width: 700px;
+    background: #C33764;
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+    background: linear-gradient(to right, #1D2671, #C33764);
+    color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+.count-forward .card h2 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* show heart */
+.heart{
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    position: fixed;
+    background: red;
+    z-index: 7;
+    display: none;
+ }
+ .heart::before, .heart::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+ }
+ .heart::before{
+    left: -17px;
+ }
+ .heart::after{
+    top: -17px;
+ }
