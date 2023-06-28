@@ -349,7 +349,7 @@ progress.addEventListener("mouseover", (e) => {
 
 });
 
-progress.addEventListener("mouseout", () => {
+heart.addEventListener("mouseout", () => {
   heart.style.display = "none";
 });
 
