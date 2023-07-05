@@ -192,9 +192,9 @@ startProgressBarKoi(targetDateKoi);
 
 
 // weather status
-const weatherApiKoi = "https://api.openweathermap.org/data/2.5/weather?q=can tho&appid=1e78a7b887a9205bd3a7ad3737e46cb6&units=metric";
+const weatherApiKoi = "https://api.openweathermap.org/data/2.5/weather?q=can tho&appid=8fb9d55b0339908ba67065a2ca670318&units=metric";
 
-const weatherApiJace = "https://api.openweathermap.org/data/2.5/weather?q=guangzhou&appid=1e78a7b887a9205bd3a7ad3737e46cb6&units=metric";
+const weatherApiJace = "https://api.openweathermap.org/data/2.5/weather?q=guangzhou&appid=8fb9d55b0339908ba67065a2ca670318&units=metric";
 
 // get the weather data
 async function getWeatherDataKoi(weatherApiKoi) {
