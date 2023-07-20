@@ -431,6 +431,7 @@ section.progress {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    z-index: 7;
 }
 
 #avatar-jace img {
