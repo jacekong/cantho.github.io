@@ -303,10 +303,10 @@ function countForward() {
   // get the box
   let countForwardBox = document.getElementById("count-forward");
 
-  const targetTime = new Date("2023-07-21T17:00:00+07:00").getTime();
-  const currentTime = new Date().getTime();
+  //const targetTime = new Date("2023-07-21T17:00:00+07:00").getTime();
+  //const currentTime = new Date().getTime();
 
-  if (currentTime >= targetTime) {
+  if (currentDate >= startingDate) {
     countForwardBox.style.display = "flex";
     // calc the difference in ms
     const timeDiff = currentDate - startingDate;
