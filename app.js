@@ -121,8 +121,8 @@ function getDifferenceJace(targetTime) {
     }
   } else {
     // hide box
-    //clearInterval(countdownInVietnamJace);
-    //clearInterval(countdownInVietnam);
+    // clearInterval(countdownInVietnamJace);
+    // clearInterval(countdownInVietnam);
     countdownBox.style.display = "none";
   }
   
@@ -306,7 +306,7 @@ function countForward() {
   const targetTime = new Date("2023-07-21T17:00:00+07:00").getTime();
   const currentTime = new Date().getTime();
 
-  if (currentDate >= startingDate) {
+  if (currentTime >= targetTime) {
     countForwardBox.style.display = "flex";
     // calc the difference in ms
     const timeDiff = currentDate - startingDate;
@@ -342,6 +342,7 @@ let heart = document.getElementById("heart");
 progress.addEventListener("mouseover", (e) => {
   let x = e.clientX;
   let y = e.clientY;
+
 
   heart.style.left = x + "px";
   heart.style.top = y + "px";
