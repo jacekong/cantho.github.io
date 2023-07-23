@@ -121,8 +121,8 @@ function getDifferenceJace(targetTime) {
     }
   } else {
     // hide box
-    clearInterval(countdownInVietnamJace);
-    clearInterval(countdownInVietnam);
+    //clearInterval(countdownInVietnamJace);
+    //clearInterval(countdownInVietnam);
     countdownBox.style.display = "none";
   }
   
@@ -303,8 +303,8 @@ function countForward() {
   // get the box
   let countForwardBox = document.getElementById("count-forward");
 
-  //const targetTime = new Date("2023-07-21T17:00:00+07:00").getTime();
-  //const currentTime = new Date().getTime();
+  const targetTime = new Date("2023-07-21T17:00:00+07:00").getTime();
+  const currentTime = new Date().getTime();
 
   if (currentDate >= startingDate) {
     countForwardBox.style.display = "flex";
